@@ -18,7 +18,6 @@
 #include <dwmapi.h>
 #pragma comment(lib, "dwmapi.lib")
 
-#include "resource.h"
 
 
 extern IMGUI_IMPL_API LRESULT ImGui_ImplWin32_WndProcHandler(HWND, UINT, WPARAM, LPARAM);
@@ -98,8 +97,6 @@ void GetProcessList(std::vector<ProcessInfo>& out) {
 int WINAPI WinMain(HINSTANCE inst, HINSTANCE, LPSTR, int) {
     WNDCLASSEXW wc{ sizeof(wc),CS_CLASSDC,WndProc,0,0,inst };
     wc.lpszClassName = L"InjUI";
-    wc.hIcon = LoadIcon(inst, MAKEINTRESOURCE(IDI_ICON1));
-    wc.hIconSm = wc.hIcon;
     RegisterClassExW(&wc);
 
     HWND hwnd = CreateWindowExW(0, wc.lpszClassName, L"GhostInject",
