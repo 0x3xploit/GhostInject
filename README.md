@@ -57,7 +57,6 @@ GhostInject/
 │       └── Injector.cpp     # Injection logic
 ├── imgui/                   # UI library
 ├── Main.cpp                 # UI implementation
-└── resource.h               # App resources
 ```
 
 ## Technical Details
