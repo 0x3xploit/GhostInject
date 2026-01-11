@@ -24,6 +24,7 @@
     <ProjectGuid>{6054f015-f3ba-4fea-80bf-f473972c9969}</ProjectGuid>
     <RootNamespace>GostInject</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+    <ProjectName>GhostInject</ProjectName>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
